@@ -1,0 +1,16 @@
+{
+  "name": "demo-docker",
+  "version": "1.0.0",
+  "description": "just returns 200 OK on / (listens on env.PORT)",
+  "author": "Ansgar Mertens <ansgar@elbstack.com>",
+  "repository": "github.com/elbstack/demo-docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -l tcp://0.0.0.0:${PORT-80}"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "micro": "^9.3.3"
+  }
+}
